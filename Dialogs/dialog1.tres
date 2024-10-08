@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://drs3h2j46nhke"]
+
+[ext_resource type="Script" path="res://Scripts/dialog.gd" id="1_77sfl"]
+[ext_resource type="Texture2D" uid="uid://dacnfcc26asuh" path="res://UI/arrow_basic_s_small.png" id="2_fhib0"]
+
+[resource]
+script = ExtResource("1_77sfl")
+name = "Corentin Boblet"
+text = "Le gaming"
+visual_left = ExtResource("2_fhib0")
