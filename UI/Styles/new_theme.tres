@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://com7b80net0cx"]
+
+[ext_resource type="StyleBox" uid="uid://dskc7f62aemi7" path="res://UI/Styles/name_style_box.tres" id="1_ffyjx"]
+
+[resource]
+Label/styles/normal = ExtResource("1_ffyjx")
