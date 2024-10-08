@@ -34,6 +34,7 @@ func next_dialog():
 	if(dialog_tween.is_running()):
 		dialog_tween.kill();
 		dialog_box.visible_ratio = 1;
+		$DialogContainer/MainDialog/TextureRect.visible = true;
 		return;
 	
 	if(current_dialog_index >= dialogs.size()-1):
@@ -45,6 +46,7 @@ func next_dialog():
 	update_dialog();
 
 func update_dialog():
+	$DialogContainer/MainDialog/TextureRect.visible = false;
 	name_box.text = current_dialog.name;
 	dialog_box.text = current_dialog.text;
 	visual_left.texture = current_dialog.visual_left;
@@ -54,3 +56,4 @@ func update_dialog():
 		dialog_tween = get_tree().create_tween();
 	dialog_box.visible_ratio = 0;
 	dialog_tween.tween_property(dialog_box, "visible_ratio", 1, keyboard_typing_duration);
+	dialog_tween.tween_property($DialogContainer/MainDialog/TextureRect, "visible", true, 0);
